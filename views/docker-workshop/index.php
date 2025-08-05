@@ -71,6 +71,7 @@
     </div>
     
     <?php
+    //to prevent showing logs part once there is nothing to show about logs
         if(Yii::$app->session->get("type") != "logs"){
             return;
         }
